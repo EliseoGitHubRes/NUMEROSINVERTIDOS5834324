@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NUMEROSINVERTIDOS5834324.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label Text="Invertir los Numeros"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   TextColor="MediumPurple"/>
+            
+            <Image Source="fle.png"
+                HeightRequest="150"
+                   WidthRequest="300"
+                HorizontalOptions="Center"
+                   BackgroundColor="White"/>
+
+            <Label
+                Text="Ingrese el primer número"
+                FontSize="15"/>
+            <Entry x:Name="n1" Placeholder="Numero 1"
+                   Keyboard="Numeric" />
+
+            <Label
+                Text="Ingrese el segundo número"
+                FontSize="15"/>
+            <Entry x:Name="n2" Placeholder="Numero 2"
+                   Keyboard="Numeric"/>
+
+            <Label
+                Text="Ingrese el tercer número"
+                FontSize="15"/>
+            <Entry x:Name="n3" Placeholder="Numero 3"
+                   Keyboard="Numeric"/>
+
+            <Label
+                Text="Ingrese el cuarto número"
+                FontSize="15"/>
+            <Entry x:Name="n4" Placeholder="Numero 4"
+                   Keyboard="Numeric"/>
+            <Button
+                BackgroundColor="White"
+                BorderColor="MediumPurple"
+                BorderWidth="3"
+                CornerRadius="30"
+                Text="Invertir Numeros"
+                Clicked="Button_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
